@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Adventure</title>
+    <link rel="stylesheet" href="styles/styles2.css">
+    <script>
+        // Function to get query parameters from the URL
+        function getAdventureType() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get("adventure") || "Select an Adventure"; // Default if no type is selected
+        }
+
+        // Set the adventure type in the dropdown or input field
+        window.onload = function () {
+            const adventureField = document.getElementById("adventure-type");
+            if (adventureField) {
+                adventureField.value = getAdventureType();
+            }
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            <li><a href="booking.html" class="active">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h1>Book Your Whitewater Adventure</h1>
+        <p>Fill out the form below to reserve your spot!</p>
+
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="adventure-type">Select Adventure:</label>
+            <select id="adventure-type" name="adventure">
+                <option value="beginner">Beginner Rapids</option>
+                <option value="intermediate">Intermediate Rapids</option>
+                <option value="extreme">Extreme Rapids</option>
+                <option value="night">Night Rapids</option>
+                <option value="waterfall">Waterfall Adventure</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Whitewater Rafting. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
