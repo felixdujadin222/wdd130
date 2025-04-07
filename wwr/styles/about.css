@@ -1,0 +1,181 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #005f73;
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  header .logo img {
+    width: 150px;
+    margin-left: 20px;
+  }
+  
+  nav {
+    text-align: right;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #ee9b00;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  /* History Section */
+  .history {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #94d2bd;
+  }
+  
+  .history h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .history-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .history-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .history-content img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Adventure Gallery */
+  .adventure {
+    padding: 60px 20px;
+    background-color: #0a9396;
+    text-align: center;
+  }
+  
+  .adventure h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery figure {
+    width: 280px;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  figcaption {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ca6702;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    opacity: 0.7;
+  }
+  

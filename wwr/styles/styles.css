@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') center/cover no-repeat fixed;
+    color: #b98643;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    background: rgba(0, 95, 115, 0.8);
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: #ee9b00;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    background: #ca6702;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.cta-button:hover {
+    background: #ee9b00;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 95, 115, 0.9);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+

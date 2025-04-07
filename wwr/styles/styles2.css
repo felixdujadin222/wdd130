@@ -1,0 +1,46 @@
+/* Booking Section */
+.booking {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: olivedrab;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.booking h1 {
+    color: #005f73;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.booking input,
+.booking select {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking .btn {
+    padding: 10px;
+    background: #ca6702;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking .btn:hover {
+    background: #ee9b00;
+}
